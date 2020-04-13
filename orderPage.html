@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Page</title>
+    <link rel="stylesheet" type="text/css" href="3155Project.css">
+
+</head>
+<body>
+
+<!-- this is where the nav bar will go. I think for this project the only page were going to have is an order form page and home page-->
+<header>
+
+    <!-- this is where the navigation bar is going to go -->
+    <div class="nav">
+
+        <!-- this makes sure the logo is also clickable to take the user back to the home page -->
+        <a href="home.html">
+            <img src="LaCarreta.png" alt="Logo" id="logo">
+        </a>
+
+        <!-- this puts the link in a table which makes them easier to format correctly -->
+        <div class="table">
+
+            <!-- links to the different HTML pages -->
+            <a class="navLink" id="home" href="home.html">Home</a>
+            <a class="navLink" id="orderPage" href="orderPage.html">Menu and Order</a>
+        </div>
+    </div>
+</header>
+
+<main>
+
+    <!-- placing to food images and buttons in this table -->
+    <div class="foodTable">
+
+        <div class="colada">
+            <h3>Colada</h3>
+            <img src="img/colada.jpg" id="colada">
+            <br>
+            <button type="button" class="orderButton">Add to Order</button>
+        </div>
+
+        <div class="hamCro">
+            <h3>Ham Croquette</h3>
+            <img src="img/croquette.jpg" id="hamCro">
+            <br>
+            <button type="button" class="orderButton">Add to Order</button>
+        </div>
+
+        <div class="cortadito">
+            <h3>Cortadito</h3>
+            <img src="img/cortadito.jpg" id="cortadito">
+            <br>
+            <button type="button" class="orderButton">Add to Order</button>
+        </div>
+
+        <div class="cheeseCro">
+            <h3>Cheese and Potato Croquette</h3>
+            <img src="img/cheesePotato.jpg" id="cheeseCro">
+            <br>
+            <button type="button" class="orderButton">Add to Order</button>
+        </div>
+    </div>
+
+    <!-- placing the forms in a table -->
+    <div class="formTable">
+
+        <div class="paymentInfo">
+            <h2>Payment Information</h2>
+            <input type="text" class="cardPay" id="nameOnCard" placeholder="Name" required>
+            <br>
+            <input type="number" class="cardPay" id="cardNum" placeholder="Card Number" required>
+            <br>
+            <input type="month" placeholder="MM/YY" class="cardPay" id="expireDate" required>
+            <input type="number" class="cardPay" id="secCode" placeholder="Security Code" required>
+        </div>
+
+        <div class="address">
+            <h2>Order Address</h2>
+            <input type="text" class="addressInput" id="address" placeholder="Address" required>
+            <input type="text" class="addressInput" id="apartment" placeholder="Apartment, Suite, etc. (Optional)">
+            <input type="text" class="addressInput" id="city" placeholder="City" required>
+            <input type="text" class="addressInput" id="state" placeholder="State" required>
+            <input type="number" class="addressInput" id="zip" placeholder="ZIP Code" required>
+        </div>
+
+    </div>
+
+    <button type="submit" id="placeOrder">Place Order</button>
+
+
+</main>
+
+
+<!-- just going to put some info down here to make it look like a good functional webpage -->
+<footer>
+    <h3>La Carreta Cuban Cafe</h3>
+    <p>
+        12345 Coconut Grove <br>
+        Miami, Fl 33133 <br>
+        (305)333-1234
+    </p>
+
+</footer>
+
+</body>
+</html>
